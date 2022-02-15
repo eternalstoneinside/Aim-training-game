@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Mari Cake</title>
+    <!--SEO-->
+    <meta name="description" content="Лучшие десерты в твоем городе">
+    <meta name="keywords" content="десерт, лучшие, панкейк">
+    <!-- OG Tags -->
+    <meta property="og:title" content="Mari Cake">
+    <meta property="og:description" content="Лучшие десерты в твоем городе">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="img/preview.png">
+    <meta property="og:site_name" content="Mari Cake">
+    <!-- Styling -->
+    <meta name="theme-color" content="#6E9C9F">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Fonts -->
+    <!-- &display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Tenor+Sans&display=swap"rel="stylesheet">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app">
+        <div class="app_header">
+          <h1 id="time-header">Время игры: <span id="time">5.0</span></h1>
+          <h1 id="result-header" class="hide">Ваш результат: <span id="result"></span></h1>
+        </div>
+        <div class="app_content">
+          <button class="btn" id="start">Начать</button>
+          <div class="game" id="game"></div>
+        </div>
+        <div class="app_footer">
+          <div class="input">
+            <label for="game-time">Время игры, (сек)</label>
+            <input type="number" id="game-time" min="5" step="1" value="5" oninput="validity.valid || (value='');">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
