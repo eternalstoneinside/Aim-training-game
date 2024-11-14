@@ -1,50 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Aim-training game</title>
-    <!--SEO-->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!-- OG Tags -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="img/preview.png">
-    <meta property="og:site_name" content="">
-    <!-- Styling -->
-    <meta name="theme-color" content="#6E9C9F">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <!-- Fonts -->
-    <!-- &display=swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Tenor+Sans&display=swap"rel="stylesheet">
-    <!-- Main Css -->
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="app">
-        <div class="app_header">
-          <h1 id="time-header">Время игры: <span id="time">5.0</span></h1>
-          <h1 id="result-header" class="hide">Ваш результат: <span id="result"></span></h1>
-        </div>
-        <div class="app_content">
-          <button class="btn" id="start">Начать</button>
-          <div class="game" id="game"></div>
-        </div>
-        <div class="app_footer">
-          <div class="input">
-            <label for="game-time">Время игры, (сек)</label>
-            <input type="number" id="game-time" min="5" step="1" value="5" oninput="validity.valid || (value='');">
-          </div>
-        </div>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Колесо фортуни</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="spinBtn">goo</div>
+      <div class="wheel">
+         <div class="number" style="--i:1;--clr:#db7093;"><span>захарвертухоеб</span></div>
+         <div class="number" style="--i:2;--clr:#20b2aa;"><span>жекастатист</span></div>
+         <div class="number" style="--i:3;--clr:#d63e92;"><span>птсаухуйсосао</span></div>
+         <div class="number" style="--i:4;--clr:#daa520;"><span>птдіма</span></div>
+         <div class="number" style="--i:5;--clr:#ff340f;"><span>1000івангар</span></div>
+         <div class="number" style="--i:6;--clr:#ff7f50;"><span>вот так вот</span></div>
+         <div class="number" style="--i:7;--clr:#3cb371;"><span>гозапушим</span></div>
+         <div class="number" style="--i:8;--clr:#4169e1;"><span>вротофтенкс</span></div>
       </div>
-    </div>
-    <script src="js/main.js"></script>
-  </body>
+   </div>
+   <script src="script.js"></script>
+</body>
+
 </html>
